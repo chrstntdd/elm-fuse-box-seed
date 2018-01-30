@@ -1,0 +1,8 @@
+node_modules/**
+.fusebox
+.env
+.vscode
+build/
+elm-stuff
+.vscode/
+.DS_Store

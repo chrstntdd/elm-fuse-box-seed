@@ -1,0 +1,21 @@
+{
+  "name": "elm-seed",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Christian Todd <christiantodd27@icloud.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer": "^7.2.5",
+    "elm": "^0.18.0",
+    "express": "^4.16.2",
+    "fuse-box-elm-plugin": "^1.1.1",
+    "node-sass": "^4.7.2",
+    "normalize.css": "^7.0.0",
+    "prettier": "^1.10.2",
+    "typescript": "^2.6.2",
+    "uglify-js": "^3.3.9"
+  },
+  "dependencies": {
+    "fuse-box": "^3.1.0-next.20"
+  }
+}
