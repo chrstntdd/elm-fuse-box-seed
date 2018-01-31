@@ -34,7 +34,7 @@ $ npm install
 
 ## Getting started
 
-I have set up two scripts in the `package.json` file. One for development and one that is better suited for production.
+There are two pre-defined scripts in the `package.json` file. One for development and one that is better suited for production.
 
 ### Development
 
@@ -72,7 +72,7 @@ Main.embed(document.getElementById('elm-root'));
 
 ### Configuration
 
-I would encourage you to look into the `fuse.js` file. Those ~100 lines are responsible for building this entire project so feel free to tweak things as necessary for your individual project needs. Configuration can be as quick as changing the constants I have preset at the top of the file or writing your own [build tasks](https://fuse-box.org/page/sparky). Do make it a point to check out the FuseBox website and peruse the documentation or maybe ask a question on [Gitter](https://gitter.im/fusebox-bundler/Lobby?utm_source=share-link&utm_medium=link&utm_campaign=share-link) if you need help extending FuseBox to further suit your needs.
+You are encouraged to look into the `fuse.js` file for all things regarding the build process. Those ~100 lines are responsible for building this project, so feel free to tweak things as necessary for your individual needs. Configuration can be as quick as changing the constants that are set at the top of the file or writing your own [build tasks](https://fuse-box.org/page/sparky). Do make it a point to check out the FuseBox website and peruse the documentation or maybe ask a question on [Gitter](https://gitter.im/fusebox-bundler/Lobby?utm_source=share-link&utm_medium=link&utm_campaign=share-link) if you need help extending FuseBox to further suit your needs.
 
 ### Known Issues
 
