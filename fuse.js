@@ -1,13 +1,12 @@
 const {
   FuseBox,
-  SVGPlugin,
   CSSPlugin,
   SassPlugin,
   QuantumPlugin,
   PostCSSPlugin,
   WebIndexPlugin
 } = require('fuse-box');
-const { src, task, exec, context, tsc } = require('fuse-box/sparky');
+const { src, task, context } = require('fuse-box/sparky');
 const { ElmPlugin } = require('fuse-box-elm-plugin');
 const { join } = require('path');
 const autoprefixer = require('autoprefixer');
@@ -46,11 +45,9 @@ context(
         plugins: [
           [SassPlugin(), PostCSSPlugin(POSTCSS_PLUGINS), CSSPlugin()],
           isProd ? ElmPlugin() : ElmPlugin({ warn: true, debug: true }),
-          SVGPlugin(),
           WebIndexPlugin({ template: TEMPLATE, title: TITLE }),
           isProd &&
             QuantumPlugin({
-              removeExportsInterop: false,
               bakeApiIntoBundle: 'app',
               uglify: true,
               treeshake: true,
