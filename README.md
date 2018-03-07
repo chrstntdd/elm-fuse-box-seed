@@ -74,6 +74,14 @@ Main.embed(document.getElementById('elm-root'));
 
 You are encouraged to look into the `fuse.js` file for all things regarding the build process. Those ~100 lines are responsible for building this project, so feel free to tweak things as necessary for your individual needs. Configuration can be as quick as changing the constants that are set at the top of the file or writing your own [build tasks](https://fuse-box.org/page/sparky). Do make it a point to check out the FuseBox website and peruse the documentation or maybe ask a question on [Gitter](https://gitter.im/fusebox-bundler/Lobby?utm_source=share-link&utm_medium=link&utm_campaign=share-link) if you need help extending FuseBox to further suit your needs.
 
+### Tests
+
+```bash
+$ npm install -g elm-test
+```
+
+You can indeed test Elm code. This is handled by [elm-test](https://github.com/rtfeldman/node-test-runner). In order to run our tests, the `elm-test` command must be available globally. Once installed, the `npm test` script will run the tests.
+
 ### Known Issues
 
 This issue only exists when in development, but it happens now and again - caching is part of what makes FuseBox so fast, but caching is just one really [hard thing](https://martinfowler.com/bliki/TwoHardThings.html). To combat this, clear the cache by deleting the `.fusebox` directory entirely and then rebuild your project.
