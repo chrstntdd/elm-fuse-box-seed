@@ -13,6 +13,7 @@ A (nearly) bare bones starter project for Elm.
 * Browser refresh on save
 * Elm time traveling debugger
 * Elm compiler messages output to console
+* Elm tests
 * Uglify-JS and FuseBox Quantum optimizations
 * [Extensible!](#considerations)
 
@@ -23,7 +24,7 @@ A (nearly) bare bones starter project for Elm.
 2. Clone this repository and then navigate into the project by running this command in your terminal.
 
 ```bash
-$ git clone https://github.com/chrstntdd/elm-seed.git && cd elm-seed
+$ git clone https://github.com/chrstntdd/elm-fuse-box-seed.git && cd elm-fuse-box-seed
 ```
 
 2. Install project dependencies.
