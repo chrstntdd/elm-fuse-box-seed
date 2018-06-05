@@ -1,33 +1,17 @@
 const {
   FuseBox,
   CSSPlugin,
-  SassPlugin,
   QuantumPlugin,
-  PostCSSPlugin,
   WebIndexPlugin
 } = require('fuse-box');
 const { src, task, context } = require('fuse-box/sparky');
 const { ElmPlugin } = require('fuse-box-elm-plugin');
 const { join } = require('path');
-const autoprefixer = require('autoprefixer');
 const express = require('express');
 
-const POSTCSS_PLUGINS = [
-  autoprefixer({
-    browsers: [
-      'Chrome >= 52',
-      'FireFox >= 44',
-      'Safari >= 7',
-      'Explorer 11',
-      'last 4 Edge versions'
-    ]
-  })
-];
-
 const OUT_DIR = join(__dirname, '/build');
-const ALL_FILES = './**/**.*';
-
 const TEMPLATE = join(__dirname, 'src/index.html');
+const ALL_FILES = './**/**.*';
 const TITLE = 'Elm App';
 
 context(
@@ -43,7 +27,7 @@ context(
         target: 'browser@es5',
         cache: !isProd,
         plugins: [
-          [SassPlugin(), PostCSSPlugin(POSTCSS_PLUGINS), CSSPlugin()],
+          [CSSPlugin()],
           isProd ? ElmPlugin() : ElmPlugin({ warn: true, debug: true }),
           WebIndexPlugin({ template: TEMPLATE, title: TITLE }),
           isProd &&

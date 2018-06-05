@@ -10,18 +10,14 @@
     "test": "elm-test"
   },
   "devDependencies": {
-    "autoprefixer": "^7.2.5",
     "express": "^4.16.2",
-    "fuse-box": "^3.1.3",
-    "fuse-box-elm-plugin": "^1.1.1",
-    "node-sass": "^4.7.2",
-    "prettier": "^1.10.2",
-    "typescript": "^2.6.2",
+    "fuse-box": "^3.3.0-next.9",
+    "fuse-box-elm-plugin": "^1.1.2",
+    "typescript": "^2.9.1",
     "uglify-js": "^3.3.9"
   },
   "dependencies": {
     "elm": "^0.18.0",
-    "elm-test": "^0.18.12",
-    "normalize.css": "^7.0.0"
+    "elm-test": "^0.18.12"
   }
 }
