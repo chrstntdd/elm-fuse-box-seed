@@ -1,15 +1,10 @@
-const {
-  FuseBox,
-  CSSPlugin,
-  QuantumPlugin,
-  WebIndexPlugin
-} = require('fuse-box');
+const { FuseBox, CSSPlugin, QuantumPlugin, WebIndexPlugin } = require('fuse-box');
 const { src, task, context } = require('fuse-box/sparky');
 const { ElmPlugin } = require('fuse-box-elm-plugin');
 const { join } = require('path');
 const express = require('express');
 
-const OUT_DIR = join(__dirname, '/build');
+const OUT_DIR = join(__dirname, 'build');
 const TEMPLATE = join(__dirname, 'src/index.html');
 const ALL_FILES = './**/**.*';
 const TITLE = 'Elm App';
