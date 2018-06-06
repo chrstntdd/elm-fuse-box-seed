@@ -4,30 +4,27 @@ A (nearly) bare bones starter project for Elm.
 
 ## Features
 
-* SCSS / SASS compilation
-* PostCSS
-* Autoprefixer
-* CSS optimization
-* Development server
-* Hot module replacement
-* Browser refresh on save
-* Elm time traveling debugger
-* Elm compiler messages output to console
-* Elm tests
-* Uglify-JS and FuseBox Quantum optimizations
-* [Extensible!](#considerations)
+- CSS optimization
+- Development server
+- Hot module replacement
+- Browser refresh on save
+- Elm time traveling debugger
+- Elm compiler messages output to console
+- Elm tests
+- Uglify-JS and FuseBox Quantum optimizations
+- [Extensible!](#considerations)
 
 ## Installation
 
-1. We are using [FuseBox](https://fuse-box.org/) paired with a [plugin](https://github.com/ccapndave/fuse-box-elm-plugin) to compile our Elm code. The version of FuseBox that we are using requires having Node.js version 8.2.0 or greater so visit the official Node.js website for instructions on how to download Node.js using a [package manager](https://nodejs.org/en/download/package-manager/) or [direct download](https://nodejs.org/en/download/) for your operating system if you don't already have it installed.
+1.  We are using [FuseBox](https://fuse-box.org/) paired with a [plugin](https://github.com/ccapndave/fuse-box-elm-plugin) to compile our Elm code. The version of FuseBox that we are using requires having Node.js version 8.2.0 or greater so visit the official Node.js website for instructions on how to download Node.js using a [package manager](https://nodejs.org/en/download/package-manager/) or [direct download](https://nodejs.org/en/download/) for your operating system if you don't already have it installed.
 
-2. Clone this repository and then navigate into the project by running this command in your terminal.
+2.  Clone this repository and then navigate into the project by running this command in your terminal.
 
 ```bash
 $ git clone https://github.com/chrstntdd/elm-fuse-box-seed.git && cd elm-fuse-box-seed
 ```
 
-2. Install project dependencies.
+3.  Install project dependencies.
 
 ```bash
 $ npm install
@@ -57,7 +54,7 @@ This script will run FuseBox in production mode which will spend a little extra 
 
 ### Included
 
-This project includes normalize.css and autoprefixer by default, but nothing else aside from Elm itself. You may wish to remove these two dependencies if you enjoy browser inconsistencies. If you need polyfills for older browsers, they can be imported into the `index.js` file and they will be incorporated into your bundle.
+This project includes a link to normalize.css in the `index.html` by default, but nothing else aside from Elm itself. If you need polyfills to provide support for older browsers, they can be imported into the `index.js` file and they will be incorporated into your bundle.
 
 ```js
 // index.js
